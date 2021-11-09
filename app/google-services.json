@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333533839421",
+    "project_id": "pdf-scanner-camera-scanner",
+    "storage_bucket": "pdf-scanner-camera-scanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333533839421:android:fb90a03db0ab32dab2aa54",
+        "android_client_info": {
+          "package_name": "com.pdf.scanner.camerascanner.pdf.creator.document.scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333533839421-aipgrr8nhnqcc5ilp120kksd2pk9pk8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFeAFayypKvTRk7fJFrf3slcb2465oz0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333533839421-aipgrr8nhnqcc5ilp120kksd2pk9pk8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

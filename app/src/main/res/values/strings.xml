@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">PDF Scanner: Camera Scanner</string>
+    <string name="qr_code">QR Code</string>
+    <string name="text_detection">Text Detection</string>
+    <string name="scan_file">Scan File</string>
+    <string name="pick_an_image">Pick an Image</string>
+    <string name="save">Save</string>
+    <string name="show_scanned_files">Show Scanned Files</string>
+    <string name="todo">todo</string>
+    <string name="show_pdf_files">Show PDF Files</string>
+    <string name="share_using">Share using</string>
+    <string name="saved_message">PDF file saved</string>
+    <string name="not_ok">Not OK</string>
+    <string name="perm_message">You have to grant permissions! Grant them from app settings please.</string>
+    <string name="choose_image">Choose the Image</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="get_started">Get Started</string>
+    <string name="scanned_pdf_files">Scanned PDF Files</string>
+    <string name="no_text">No Text</string>
+    <string name="pdf_file">PDF File</string>
+    <string name="sofit_code">Sofit Code</string>
+    <string name="information">QR Code:</string>
+    <string name="camera_scanner">Camera Scanner</string>
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="no_card">No card found</string>
+    <string name="delete_message">Do you want to delete?</string>
+    <string name="del">Deleted</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_data">No data found</string>
+
+    //Ad Units test Ids
+
+    <string name="facebook_banner_test" translatable="false">IMG_16_9_APP_INSTALL#526157361624889_526157578291534</string>
+    <string name="facebook_interstitial_test" translatable="false">IMG_16_9_APP_INSTALL#526157361624889_526158124958146</string>
+    <string name="facebook_native_id_test" translatable="false">IMG_16_9_APP_INSTALL#526157361624889_526158278291464</string>
+
+    //Ad Units
+    <string name="app_id">233138778290277</string>
+    <string name="facebook_banner" translatable="false">526157361624889_526157578291534</string>
+    <string name="facebook_interstitial" translatable="false">526157361624889_526158124958146</string>
+    <string name="facebook_native_id" translatable="false">526157361624889_526158278291464</string>
+
+</resources>

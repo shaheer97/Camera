@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sofit.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bannerAdContainer">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/line_g1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/_30sdp"
+                app:layout_constraintBottom_toBottomOf="@id/line_g1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_splash"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line_g1">
+
+
+            <RelativeLayout
+                    android:id="@+id/rl_scan_file"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/blue_card"
+                    android:onClick="scanClick"
+                    app:layout_constraintBottom_toTopOf="@+id/rl_text_detection"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="UsingOnClickInXml">
+
+                <ImageView
+                        android:id="@+id/img_scan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_scan" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img_scan"
+                        android:text="@string/scan_file"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_text_detection"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/yellow_card"
+                    android:onClick="realTimeText"
+                    app:layout_constraintBottom_toTopOf="@+id/rl_qr_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_scan_file"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="UsingOnClickInXml">
+
+                <ImageView
+                        android:id="@+id/img_text"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_text" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img_text"
+                        android:text="@string/text_detection"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_qr_code"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/red_card"
+                    android:onClick="ocrClick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_text_detection"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="UsingOnClickInXml">
+
+                <ImageView
+                        android:id="@+id/img_qr"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_qr" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/img_qr"
+                        android:text="@string/qr_code"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.sofit.adshelper.customViews.BannerAdView
+            android:id="@+id/bannerAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
+</RelativeLayout>
